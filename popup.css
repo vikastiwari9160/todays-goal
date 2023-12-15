@@ -26,7 +26,7 @@ body{
     background-color: #fff;
     border-radius: 50px;
 }
-#task_input{
+#Task-input{
     flex: 1;
     font-size: 16px;
     margin: 5px 10px;
@@ -44,11 +44,11 @@ body{
     border-radius: 50px;
     cursor: pointer;
 }
-#task_list{
+#Task-list{
     list-style: none;
     margin: 10px 20px;
 }
-#task_list li{
+#Task-list li{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -57,14 +57,14 @@ body{
     border-radius: 50px;
     background-color: #e4c7ff;
 }
-#task_list button{
+#Task-list button{
     font-size: 16px;
     font-weight: bolder;
     padding: 0px 5px;
     border: none;
     background: transparent;
 }
-#task_list button:hover{
+#Task-list button:hover{
     color: red;
     background-color: #9b9898;
     border-radius: 100%;
