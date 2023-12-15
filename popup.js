@@ -1,19 +1,25 @@
-let taskBox = document.getElementById('Task-input');
-let taskContainer = document.getElementById('task_list');
-function add_Task() {
-    let task = taskBox.ariaValueMax;
-    // if(task === ''){
-    //     alert('task could not be empty!')
-    // }else{
-    //     console.log('working' + task);
-    // }
+let taskBox = document.getElementById("Task-input");
+let taskList = document.getElementById("Task-list");
+restore();
+
+function addTask() {
+    let task = taskBox.value;
+    let li = document.createElement("li");
+    li.innerHTML = task + "<button onclick='del()'>X</button>"; 
+    taskList.appendChild(li);
+    taskBox.value ="";
+    save();
 }
 
+function del() {
+    event.target.parentElement.remove();
+    save();
+}
 
+function save() {
+    localStorage.setItem('data', taskList.innerHTML);
+}
 
-// function Add_Task(){
-//     let Area= document.getElementsByClassName("task_area");
-//     let taskInput= document.createElement("input");
-//     taskInput.setAttribute("id","taskText");
-//     Area.appendChild(taskInput);
-// }
+function restore(){
+    taskList.innerHTML = localStorage.getItem('data');
+}
