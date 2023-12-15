@@ -1,0 +1,83 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background: #0f0f0f;
+}
+.container{
+    height: 500px;
+    width: 350px;
+    background-color: #dcdcdc;
+    margin: 10px;
+    border-radius: 20px;
+}
+.head{
+    text-align: center;
+    padding: 10px;
+}
+.row{
+    margin: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 50px;
+}
+#task_input{
+    flex: 1;
+    font-size: 16px;
+    margin: 5px 10px;
+    padding: 5px 5px;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+.row button{
+    border: none;
+    font-size: 16px;
+    color: #fff;
+    background-color: blueviolet;
+    padding: 10px 25px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+#task_list{
+    list-style: none;
+    margin: 10px 20px;
+}
+#task_list li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 10px;
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #e4c7ff;
+}
+#task_list button{
+    font-size: 16px;
+    font-weight: bolder;
+    padding: 0px 5px;
+    border: none;
+    background: transparent;
+}
+#task_list button:hover{
+    color: red;
+    background-color: #9b9898;
+    border-radius: 100%;
+}
+
+/* .newTask_btn{
+    display: flex;
+    justify-content: space-between;
+    margin: 4vh 30vw;
+}
+.newTask_btn button{
+    font-size: 16px;
+    padding: 10px 20px;
+    background-color: #e2c9f7;
+    border-radius: 100px;
+} */
